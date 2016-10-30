@@ -1,0 +1,25 @@
+<html ng-app="appContact" >
+    <head>
+        <title>AngularJS Contacts Manager </title>
+        <script src="lib/angular.min.js"></script>
+        <script src="lib/angular-route.min.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-controller="mainCtrl">
+        <div>
+            <h2>Angular Js Contact Manager</h2>
+        </div>
+        <div>
+         Hi {{name}},<br/>
+        <ol>
+            <li><a href="#/home/"> Home</a></li>
+            <li><a href="#/new/"> New</a></li>
+            <li><a href="#/view/"> view</a></li>
+        </ol>    
+        </div>
+        <div>
+            <ng-view></ng-view>
+        </div>
+        
+    </body>
+</html>
